@@ -1,0 +1,26 @@
+From 63fa007b816b11b87b3e72fa2f3941e11f170eca Mon Sep 17 00:00:00 2001
+From: "jiawei.li" <jiawei.li@sim.com>
+Date: Tue, 22 Nov 2016 12:45:24 +0800
+Subject: [PATCH 5/6] PBS01: Fix lcm orientation
+
+Change-Id: Ib2fbe3dcdaff66a5392704f3bbee87ab40a468ac
+---
+ dev/gcdb/display/include/panel_com40h4m_video.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/dev/gcdb/display/include/panel_com40h4m_video.h b/dev/gcdb/display/include/panel_com40h4m_video.h
+index 72d6ffb..350f3ad 100644
+--- a/dev/gcdb/display/include/panel_com40h4m_video.h
++++ b/dev/gcdb/display/include/panel_com40h4m_video.h
+@@ -83,7 +83,7 @@ static char com40h4m_video_on_cmd2[] = {
+ };
+ 
+ static char com40h4m_video_on_cmd3[] = {
+-	0x36, 0x00, 0x15, 0x80
++	0x36, 0x03, 0x15, 0x80
+ };
+ 
+ static char com40h4m_video_on_cmd4[] = {
+-- 
+1.9.1
+
